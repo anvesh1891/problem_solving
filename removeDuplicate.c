@@ -24,10 +24,14 @@ printf("\n");
 static void removeDuplicates2(int arr[],int n){
 //Complexity : nlogn+n==nlogn
 
-int i;
-for(i=0;i<n;i++){
-if(arr[i]==arr[i+1])
-arr[i+1]=MAX_INT;
+int j=0,i;
+for(i=j+1;i<n;i++){
+if(arr[i]==arr[j])
+{
+arr[i]=MAX_INT;
+}
+else
+j=i;
 }
 
 printf("after removing duplicates \n");
