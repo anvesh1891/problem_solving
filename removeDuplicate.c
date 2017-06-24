@@ -49,9 +49,7 @@ int arr[100];
 int i,n;
 printf("Enter size of array \n");
 scanf("%d",&n);
-printf("Enter array of elements\n");
-for(i=0;i<n;i++)
-scanf("%d",&arr[i]);
+readArray(arr,n);
 //removeDuplicates(arr,n);
 quicksort(arr,0,n-1);
 display(arr,n);

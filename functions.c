@@ -35,4 +35,11 @@ for(i=0;i<n;i++)
 printf("%d ",arr[i]);
 printf("\n");
 }
+void readArray(int arr[],int n){
+int i;
+printf("Enter %d elements\n",n);
+for(i=0;i<n;i++){
+scanf("%d",&arr[i]);
+}
+}
 
